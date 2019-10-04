@@ -7,11 +7,36 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:pug && npm run test:style && npm run test:js",
+    "test:pug": "glob-exec \"src/**/*.pug\" -- \"pug-lint {{files.join(' ')}}\"",
+    "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "test:js": "eslint  src/js/**/*.js"
   },
-  "author": "Zaiarniy Iaroslav",
+  "lint-staged": {
+    "*.pug": "pug-lint",
+    "*.scss": "stylelint --syntax=scss",
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "author": "Iaroslav Zaiarniy",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "glob-exec": "^0.1.1",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.1",
+    "pug-lint": "^2.6.0",
+    "stylelint": "^11.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }
