@@ -7,6 +7,8 @@
     "doc": "doc"
   },
   "scripts": {
+    "start": "node backend/bin/www.js",
+    "dev": "nodemon backend/bin/www.js -e js",
     "test": "npm run test:pug && npm run test:style && npm run test:js",
     "test:pug": "glob-exec \"src/**/*.pug\" -- \"pug-lint {{files.join(' ')}}\"",
     "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
@@ -25,9 +27,14 @@
   "author": "Iaroslav Zaiarniy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",

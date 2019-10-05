@@ -216,8 +216,8 @@
     "string-no-newline": [true, {
       "message": "В строчных данных не должно быть переносов"
     }],
-    "string-quotes": ["single", {
-      "message": "Кавычки одиночные в стилях на проекте у нас"
+    "string-quotes": ["double", {
+      "message": "Кавычки двойные в стилях на проекте у нас"
     }],
     "length-zero-no-unit": [true, {
       "message": "Нулю не нужны измерения единицы"

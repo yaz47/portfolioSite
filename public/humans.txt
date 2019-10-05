@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+	Developer:Iaroslav Zaiarniy
+	Twitter: @yaz_uaz
+	From:Chelyabinsk, Russia
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Node.js, Normalize.css
