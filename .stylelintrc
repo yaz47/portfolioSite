@@ -47,11 +47,6 @@
       },
       # Свойства
       "declarations",
-      # Медиаусловия
-      {
-        "type": "at-rule",
-        "name": "media",
-      },
       # Псевдоселекторы и псевдоэлементы
       {
         "type": "rule",
@@ -72,6 +67,11 @@
         "type": "rule",
         "selector": "^&--[-a-z0-9]+"
       },
+      # Медиаусловия
+      {
+        "type": "at-rule",
+        "name": "media",
+      },
     ],
     # Проверка очередности правил
     # https://github.com/hudochenkov/stylelint-order/blob/master/rules/properties-order/README.md
@@ -80,6 +80,12 @@
         "properties": [
           "content",
           "box-sizing",
+          "position",
+          "z-index",
+          "top",
+          "right",
+          "bottom",
+          "left",
           "display",
           "flex",
           "flex-wrap",
@@ -103,26 +109,20 @@
           "grid-row-*",
           "grid-template",
           "grid-template-*",
-          "position",
-          "z-index",
-          "top",
-          "right",
-          "bottom",
-          "left",
           "width",
           "min-width",
           "max-width",
           "height",
           "min-height",
           "max-height",
-          "overflow",
-          "overflow-*",
           "margin",
           "margin-*",
-          "border",
-          "border-*",
           "padding",
           "padding-*",
+          "border",
+          "border-*",
+          "overflow",
+          "overflow-*",
         ]
       },
       {
@@ -528,9 +528,9 @@
       # "severity": "warning",
       "message": "Селекторов по тегу более двух использовать не стоит"
     }],
-    "selector-max-class": [2, {
+    "selector-max-class": [3, {
       # "severity": "warning",
-      "message": "Классов в селекторе более двух использовать не стоит"
+      "message": "Классов в селекторе более трех использовать не стоит"
     }],
     "selector-max-combinators": [2, {
       # "severity": "warning",

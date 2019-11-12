@@ -1,4 +1,9 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb-base/legacy"
+  "extends": ["airbnb-base/legacy"],
+  "rules": {
+    "strict": "off",
+    "indent": "off",
+    "func-names": "off"
+  }
 }

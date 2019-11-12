@@ -1,0 +1,25 @@
+$tablet-width: 768px;
+$half-full-hd: 980px;
+$about-breakpoint: 1250px;
+$desktop-width: 1600px;
+$only-mobile-width: 767px;
+$only-tablet-width: 979px;
+$only-about-breakpoint: 1249px;
+$only-half-full-hd: 1599px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$white: #ffffff;
+$red: #ff0000;
+$bright-blue: #2c39f2;
+$grey-blue: #f6f8fa;
+$black: #000000;
+
+$default-text-color: $black;
+
+$default-bg-color: $white;
+
+$default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* stylelint-disable-line value-keyword-case */
+
+$text-default: normal 400 16px/1.5 $default-font;
