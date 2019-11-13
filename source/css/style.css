@@ -388,30 +388,24 @@ html {
 }
 
 /* line 12, source/sass/global.scss */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* line 17, source/sass/global.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 22, source/sass/global.scss */
+/* line 17, source/sass/global.scss */
 button {
   cursor: pointer;
 }
 
-/* line 26, source/sass/global.scss */
+/* line 21, source/sass/global.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 33, source/sass/global.scss */
+/* line 28, source/sass/global.scss */
 body {
   position: relative;
   min-width: 320px;
@@ -422,7 +416,7 @@ body {
   background-color: #f6f8fa;
 }
 
-/* line 45, source/sass/global.scss */
+/* line 40, source/sass/global.scss */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -439,10 +433,195 @@ body {
 /* line 1, source/blocks/resume/resume.scss */
 .resume {
   position: relative;
-  width: 700px;
-  min-height: 700px;
+  display: flex;
+  width: 800px;
   margin: 0 auto;
+  padding: 30px 0;
+  font: normal 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #000000;
   border: 10px solid #2c39f2;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+/* line 16, source/blocks/resume/resume.scss */
+.resume__col-one {
+  width: 35%;
+  border-right: 3px solid #2c39f2;
+}
+
+/* line 21, source/blocks/resume/resume.scss */
+.resume__container {
+  position: relative;
+  margin: 0 25px;
+  text-align: center;
+}
+
+/* line 28, source/blocks/resume/resume.scss */
+.resume__avatar {
+  overflow: hidden;
+  width: 125px;
+  height: 125px;
+  margin: 15px auto 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffffff, 0 0 0 13px #2c39f2;
+  overflow: hidden;
+}
+
+/* line 16, source/sass/mixins.scss */
+.resume__avatar picture,
+.resume__avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, source/blocks/resume/resume.scss */
+.resume__avatar:hover {
+  box-shadow: 0 0 0 10px #ffffff, 0 0 0 13px #ff1553;
+}
+
+/* line 49, source/blocks/resume/resume.scss */
+.resume__name {
+  position: relative;
+  margin: 0;
+  padding: 0 45px;
+  font: normal 400 20px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #ff1553;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 59, source/blocks/resume/resume.scss */
+.resume__name::before, .resume__name::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #2c39f2;
+}
+
+/* line 71, source/blocks/resume/resume.scss */
+.resume__name::before {
+  left: 0;
+}
+
+/* line 75, source/blocks/resume/resume.scss */
+.resume__name::after {
+  right: 0;
+}
+
+/* line 80, source/blocks/resume/resume.scss */
+.resume__surname {
+  margin: 0;
+  padding: 0 10px;
+  font: normal 700 26px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 89, source/blocks/resume/resume.scss */
+.resume__title {
+  position: relative;
+  display: inline-block;
+  min-width: 150px;
+  margin: 30px 0;
+  padding: 0 20px;
+  font: normal 700 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #2c39f2;
+  text-align: center;
+  text-transform: uppercase;
+  border: 3px solid #2c39f2;
+}
+
+/* line 103, source/blocks/resume/resume.scss */
+.resume__title::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  border-top: 5px solid #2c39f2;
+  border-right: 10px solid #2c39f2;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid transparent;
+  transform: translateY(100%);
+}
+
+/* line 118, source/blocks/resume/resume.scss */
+.resume__contact-list {
+  text-align: left;
+}
+
+/* line 122, source/blocks/resume/resume.scss */
+.resume__contact-link {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  color: #ff1553;
+}
+
+/* line 4, source/sass/mixins.scss */
+.resume__contact-link:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.resume__contact-link:active {
+  opacity: 0.3;
+}
+
+/* line 131, source/blocks/resume/resume.scss */
+.resume__contact-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+}
+
+/* line 144, source/blocks/resume/resume.scss */
+.resume__contact-link--phone::before {
+  background: top 4px left 2px/15px 15px no-repeat url("../img/phone.svg");
+}
+
+/* line 151, source/blocks/resume/resume.scss */
+.resume__contact-link--mail::before {
+  background: top 0 left 0/15px 15px no-repeat url("../img/envelope.svg");
+}
+
+/* line 158, source/blocks/resume/resume.scss */
+.resume__contact-link--loc::before {
+  background: top 0 left 0/15px 15px no-repeat url("../img/location.svg");
+}
+
+/* line 164, source/blocks/resume/resume.scss */
+.resume__item {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* line 168, source/blocks/resume/resume.scss */
+.resume__item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2c39f2;
+}
+
+/* line 182, source/blocks/resume/resume.scss */
+.resume__text {
+  margin: 0;
+  padding: 0;
+  text-indent: 1em;
+  text-align: left;
 }

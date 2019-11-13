@@ -1,4 +1,29 @@
 section(class='resume')
-  div(class='resume__container')
-    div(class='resume__col-one')
-    div(class='resume__col-two')
+  h1(class='visually-hidden') Резюме - Заярный Я.А.
+  div(class='resume__col-one')
+    div(class='resume__container')
+      div(class='resume__avatar')
+        picture
+          source(type='image/webp' srcset='img/face.webp')
+          img(src='img/face.jpg' alt='Заярный Я.А.')
+      p(class='resume__name') Заярный
+      p(class='resume__surname') Ярослав
+      h2(class='resume__title') Контакты
+      ul(class='resume__contact-list')
+        li(class='resume__contact-item')
+          a(class='resume__contact-link resume__contact-link--phone' href='tel:+79191122914' aria-label='Телефон для связи') +7 919 112 29 14
+        li(class='resume__contact-item')
+          a(class='resume__contact-link resume__contact-link--mail' href='mailto:zayarnyy74@gmail.com?subject=Job' aria-label='Почта для связи') zayarnyy74@gmail.com
+        li(class='resume__contact-item')
+          a(class='resume__contact-link resume__contact-link--loc') Челябинск, Россия
+      h2(class='resume__title') Языки
+      ul(class='resume__list')
+        li(class='resume__item')
+          p(class='resume__text') Русский - родной
+        li(class='resume__item')
+          p(class='resume__text') English - Upper-Intermediate (B2)
+      h2(class='resume__title') Навыки
+
+
+  div(class='resume__col-two')
+    div(class='resume__container')
