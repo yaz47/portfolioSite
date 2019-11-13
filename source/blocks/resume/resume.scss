@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
   width: 800px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 25px 0;
 
   font: $text-default;
   color: $black;
@@ -184,4 +185,65 @@
 
   text-indent: 1em;
   text-align: left;
+}
+
+.resume__skills-item {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.resume__bar {
+  position: relative;
+  width: 100%;
+  height: 12px;
+
+  border: 3px solid $bright-blue;
+  background-color: $grey-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    background-color: $red;
+  }
+
+  &--s {
+
+    &::after {
+      width: 20%;
+    }
+  }
+
+  &--m {
+
+    &::after {
+      width: 40%;
+    }
+  }
+
+  &--l {
+
+    &::after {
+      width: 60%;
+    }
+  }
+
+  &--xl {
+
+    &::after {
+      width: 80%;
+    }
+  }
+
+  &--xxl {
+
+    &::after {
+      width: 100%;
+    }
+  }
 }

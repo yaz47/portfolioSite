@@ -435,8 +435,9 @@ body {
   position: relative;
   display: flex;
   width: 800px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 25px 0;
   font: normal 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #000000;
   border: 10px solid #2c39f2;
@@ -444,20 +445,20 @@ body {
   background-color: #ffffff;
 }
 
-/* line 16, source/blocks/resume/resume.scss */
+/* line 17, source/blocks/resume/resume.scss */
 .resume__col-one {
   width: 35%;
   border-right: 3px solid #2c39f2;
 }
 
-/* line 21, source/blocks/resume/resume.scss */
+/* line 22, source/blocks/resume/resume.scss */
 .resume__container {
   position: relative;
   margin: 0 25px;
   text-align: center;
 }
 
-/* line 28, source/blocks/resume/resume.scss */
+/* line 29, source/blocks/resume/resume.scss */
 .resume__avatar {
   overflow: hidden;
   width: 125px;
@@ -478,12 +479,12 @@ body {
   padding: 0;
 }
 
-/* line 42, source/blocks/resume/resume.scss */
+/* line 43, source/blocks/resume/resume.scss */
 .resume__avatar:hover {
   box-shadow: 0 0 0 10px #ffffff, 0 0 0 13px #ff1553;
 }
 
-/* line 49, source/blocks/resume/resume.scss */
+/* line 50, source/blocks/resume/resume.scss */
 .resume__name {
   position: relative;
   margin: 0;
@@ -494,7 +495,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 59, source/blocks/resume/resume.scss */
+/* line 60, source/blocks/resume/resume.scss */
 .resume__name::before, .resume__name::after {
   content: "";
   position: absolute;
@@ -505,17 +506,17 @@ body {
   background-color: #2c39f2;
 }
 
-/* line 71, source/blocks/resume/resume.scss */
+/* line 72, source/blocks/resume/resume.scss */
 .resume__name::before {
   left: 0;
 }
 
-/* line 75, source/blocks/resume/resume.scss */
+/* line 76, source/blocks/resume/resume.scss */
 .resume__name::after {
   right: 0;
 }
 
-/* line 80, source/blocks/resume/resume.scss */
+/* line 81, source/blocks/resume/resume.scss */
 .resume__surname {
   margin: 0;
   padding: 0 10px;
@@ -524,7 +525,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 89, source/blocks/resume/resume.scss */
+/* line 90, source/blocks/resume/resume.scss */
 .resume__title {
   position: relative;
   display: inline-block;
@@ -538,7 +539,7 @@ body {
   border: 3px solid #2c39f2;
 }
 
-/* line 103, source/blocks/resume/resume.scss */
+/* line 104, source/blocks/resume/resume.scss */
 .resume__title::before {
   content: "";
   position: absolute;
@@ -551,12 +552,12 @@ body {
   transform: translateY(100%);
 }
 
-/* line 118, source/blocks/resume/resume.scss */
+/* line 119, source/blocks/resume/resume.scss */
 .resume__contact-list {
   text-align: left;
 }
 
-/* line 122, source/blocks/resume/resume.scss */
+/* line 123, source/blocks/resume/resume.scss */
 .resume__contact-link {
   position: relative;
   display: inline-block;
@@ -574,7 +575,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 131, source/blocks/resume/resume.scss */
+/* line 132, source/blocks/resume/resume.scss */
 .resume__contact-link::before {
   content: "";
   position: absolute;
@@ -585,28 +586,28 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 144, source/blocks/resume/resume.scss */
+/* line 145, source/blocks/resume/resume.scss */
 .resume__contact-link--phone::before {
   background: top 4px left 2px/15px 15px no-repeat url("../img/phone.svg");
 }
 
-/* line 151, source/blocks/resume/resume.scss */
+/* line 152, source/blocks/resume/resume.scss */
 .resume__contact-link--mail::before {
   background: top 0 left 0/15px 15px no-repeat url("../img/envelope.svg");
 }
 
-/* line 158, source/blocks/resume/resume.scss */
+/* line 159, source/blocks/resume/resume.scss */
 .resume__contact-link--loc::before {
   background: top 0 left 0/15px 15px no-repeat url("../img/location.svg");
 }
 
-/* line 164, source/blocks/resume/resume.scss */
+/* line 165, source/blocks/resume/resume.scss */
 .resume__item {
   position: relative;
   padding-left: 20px;
 }
 
-/* line 168, source/blocks/resume/resume.scss */
+/* line 169, source/blocks/resume/resume.scss */
 .resume__item::before {
   content: "";
   position: absolute;
@@ -624,4 +625,56 @@ body {
   padding: 0;
   text-indent: 1em;
   text-align: left;
+}
+
+/* line 190, source/blocks/resume/resume.scss */
+.resume__skills-item {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 197, source/blocks/resume/resume.scss */
+.resume__bar {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border: 3px solid #2c39f2;
+  background-color: #f6f8fa;
+}
+
+/* line 205, source/blocks/resume/resume.scss */
+.resume__bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ff1553;
+}
+
+/* line 217, source/blocks/resume/resume.scss */
+.resume__bar--s::after {
+  width: 20%;
+}
+
+/* line 224, source/blocks/resume/resume.scss */
+.resume__bar--m::after {
+  width: 40%;
+}
+
+/* line 231, source/blocks/resume/resume.scss */
+.resume__bar--l::after {
+  width: 60%;
+}
+
+/* line 238, source/blocks/resume/resume.scss */
+.resume__bar--xl::after {
+  width: 80%;
+}
+
+/* line 245, source/blocks/resume/resume.scss */
+.resume__bar--xxl::after {
+  width: 100%;
 }
