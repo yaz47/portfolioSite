@@ -52,3 +52,32 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.nothing {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+
+  background-color: $grey-blue;
+}
+
+.nothing__text {
+  margin: auto;
+  padding: 30px;
+
+  font: $text-big;
+  color: $bright-blue;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  border: 10px solid $bright-blue;
+  border-radius: 5px;
+  background-color: $white;
+}

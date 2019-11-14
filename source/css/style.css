@@ -430,6 +430,34 @@ body {
   overflow: hidden;
 }
 
+/* line 56, source/sass/global.scss */
+.nothing {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  background-color: #f6f8fa;
+}
+
+/* line 70, source/sass/global.scss */
+.nothing__text {
+  margin: auto;
+  padding: 30px;
+  font: normal 700 60px/1.2 "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #2c39f2;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 10px solid #2c39f2;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
 /* line 1, source/blocks/resume/resume.scss */
 .resume {
   position: relative;

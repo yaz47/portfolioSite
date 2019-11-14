@@ -5,7 +5,7 @@ html(lang='ru')
     meta(charset='utf-8')
 
     block title
-      title Заярный Я.А. - Резюме
+      title Тут ничего нет
 
     meta(name='description' content='Заярный Я.А. - Резюме')
     meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -15,11 +15,7 @@ html(lang='ru')
 
   body
 
-    block svg-sprite
-      div(style={display: 'none'})
-        include ../img/svg-sprite/sprite.svg
-
-    block content
-      include ../blocks/resume/resume.pug
+    div(class='nothing')
+      div(class='nothing__text') 404 :(
 
     script(src='js/script.min.js')
