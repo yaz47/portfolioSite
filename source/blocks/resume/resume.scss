@@ -1,7 +1,7 @@
 .resume {
   position: relative;
   display: flex;
-  width: 800px;
+  width: 750px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 25px 0;
@@ -17,6 +17,10 @@
 .resume__col-one {
   width: 35%;
   border-right: 3px solid $bright-blue;
+}
+
+.resume__col-two {
+  width: 65%;
 }
 
 .resume__container {
@@ -164,6 +168,7 @@
 
 .resume__item {
   position: relative;
+  margin-bottom: 10px;
   padding-left: 20px;
 
   &::before {
@@ -246,4 +251,25 @@
       width: 100%;
     }
   }
+}
+
+.resume__origin {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.resume__origin-link {
+  @include defaultHoverEffect();
+
+  display: block;
+  margin-right: auto;
+
+  color: $red;
+}
+
+.resume__origin-text {
+  margin: 0 0 0 20px;
+  padding: 0;
+
+  text-align: left;
 }
